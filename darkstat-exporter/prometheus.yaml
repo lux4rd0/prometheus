@@ -1,15 +1,19 @@
   - job_name: 'darkstat-exporter'
+    relabel_configs:
+      - source_labels: [instance]
+        replacement: 'gw.tylephony.com'
+        target_label: instance
     scrape_interval: 15s
     metrics_path: /probe
     params:
       script: [darkstat]
     static_configs:
       - targets:
-        - host:9469
+        - app04.tylephony.com:9469
 
   - job_name: 'darkstat-exporter-metrics'
     scrape_interval: 15s
     metrics_path: /metrics
     static_configs:
       - targets:
-        - host:9469
+        - app04.tylephony.com:9469

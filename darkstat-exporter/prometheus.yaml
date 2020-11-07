@@ -1,0 +1,15 @@
+  - job_name: 'darkstat-exporter'
+    scrape_interval: 15s
+    metrics_path: /probe
+    params:
+      script: [darkstat]
+    static_configs:
+      - targets:
+        - host:9469
+
+  - job_name: 'darkstat-exporter-metrics'
+    scrape_interval: 15s
+    metrics_path: /metrics
+    static_configs:
+      - targets:
+        - host:9469

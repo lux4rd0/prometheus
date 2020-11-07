@@ -8,21 +8,13 @@
       "pluginId": "prometheus",
       "pluginName": "Prometheus"
     },
-    {
-      "name": "DS_INFLUXDB_- TYLEPHONY",
-      "label": "InfluxDB - tylephony",
-      "description": "",
-      "type": "datasource",
-      "pluginId": "influxdb",
-      "pluginName": "InfluxDB"
-    }
   ],
   "__requires": [
     {
       "type": "grafana",
       "id": "grafana",
       "name": "Grafana",
-      "version": "7.3.1"
+      "version": "7.2.2"
     },
     {
       "type": "panel",
@@ -64,9 +56,9 @@
   },
   "editable": true,
   "gnetId": null,
-  "graphTooltip": 0,
+  "graphTooltip": 1,
   "id": null,
-  "iteration": 1604726989099,
+  "iteration": 1604791750372,
   "links": [],
   "panels": [
     {
@@ -83,7 +75,7 @@
         "overrides": []
       },
       "fill": 1,
-      "fillGradient": 7,
+      "fillGradient": 5,
       "gridPos": {
         "h": 9,
         "w": 24,
@@ -110,12 +102,12 @@
       },
       "lines": true,
       "linewidth": 1,
-      "nullPointMode": "null",
+      "nullPointMode": "null as zero",
       "options": {
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.3.1",
+      "pluginVersion": "7.2.2",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -155,6 +147,7 @@
         "sort": 2,
         "value_type": "individual"
       },
+      "transparent": true,
       "type": "graph",
       "xaxis": {
         "buckets": null,
@@ -224,7 +217,7 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 4,
+        "h": 3,
         "w": 5,
         "x": 0,
         "y": 10
@@ -245,7 +238,7 @@
         },
         "textMode": "auto"
       },
-      "pluginVersion": "7.3.1",
+      "pluginVersion": "7.2.2",
       "targets": [
         {
           "expr": "darkstat_net_in{host=~\"$host\"}",
@@ -303,7 +296,7 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 4,
+        "h": 3,
         "w": 5,
         "x": 5,
         "y": 10
@@ -324,7 +317,7 @@
         },
         "textMode": "auto"
       },
-      "pluginVersion": "7.3.1",
+      "pluginVersion": "7.2.2",
       "targets": [
         {
           "expr": "darkstat_net_in{host=~\"$host\"}",
@@ -379,7 +372,7 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 4,
+        "h": 3,
         "w": 4,
         "x": 10,
         "y": 10
@@ -400,7 +393,7 @@
         },
         "textMode": "auto"
       },
-      "pluginVersion": "7.3.1",
+      "pluginVersion": "7.2.2",
       "targets": [
         {
           "expr": "darkstat_net_in{host=~\"$host\"}",
@@ -449,7 +442,7 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 4,
+        "h": 3,
         "w": 5,
         "x": 14,
         "y": 10
@@ -470,7 +463,7 @@
         },
         "textMode": "auto"
       },
-      "pluginVersion": "7.3.1",
+      "pluginVersion": "7.2.2",
       "targets": [
         {
           "expr": "darkstat_net_in{host=~\"$host\"}",
@@ -519,7 +512,7 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 4,
+        "h": 3,
         "w": 5,
         "x": 19,
         "y": 10
@@ -540,7 +533,7 @@
         },
         "textMode": "auto"
       },
-      "pluginVersion": "7.3.1",
+      "pluginVersion": "7.2.2",
       "targets": [
         {
           "expr": "darkstat_net_in{host=~\"$host\"}",
@@ -575,7 +568,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 14
+        "y": 13
       },
       "id": 24,
       "panels": [],
@@ -606,10 +599,10 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 4,
+        "h": 3,
         "w": 5,
         "x": 0,
-        "y": 15
+        "y": 14
       },
       "id": 25,
       "interval": "15s",
@@ -627,7 +620,7 @@
         },
         "textMode": "auto"
       },
-      "pluginVersion": "7.3.1",
+      "pluginVersion": "7.2.2",
       "targets": [
         {
           "expr": "darkstat_net_out{host=~\"$host\"}",
@@ -685,10 +678,10 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 4,
+        "h": 3,
         "w": 5,
         "x": 5,
-        "y": 15
+        "y": 14
       },
       "id": 17,
       "interval": "15s",
@@ -706,7 +699,7 @@
         },
         "textMode": "auto"
       },
-      "pluginVersion": "7.3.1",
+      "pluginVersion": "7.2.2",
       "targets": [
         {
           "expr": "darkstat_net_out{host=~\"$host\"}",
@@ -761,10 +754,10 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 4,
+        "h": 3,
         "w": 4,
         "x": 10,
-        "y": 15
+        "y": 14
       },
       "id": 18,
       "interval": "15s",
@@ -782,7 +775,7 @@
         },
         "textMode": "auto"
       },
-      "pluginVersion": "7.3.1",
+      "pluginVersion": "7.2.2",
       "targets": [
         {
           "expr": "darkstat_net_out{host=~\"$host\"}",
@@ -831,10 +824,10 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 4,
+        "h": 3,
         "w": 5,
         "x": 14,
-        "y": 15
+        "y": 14
       },
       "id": 19,
       "interval": "15s",
@@ -852,7 +845,7 @@
         },
         "textMode": "auto"
       },
-      "pluginVersion": "7.3.1",
+      "pluginVersion": "7.2.2",
       "targets": [
         {
           "expr": "darkstat_net_out{host=~\"$host\"}",
@@ -901,10 +894,10 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 4,
+        "h": 3,
         "w": 5,
         "x": 19,
-        "y": 15
+        "y": 14
       },
       "id": 30,
       "interval": "15s",
@@ -922,7 +915,7 @@
         },
         "textMode": "auto"
       },
-      "pluginVersion": "7.3.1",
+      "pluginVersion": "7.2.2",
       "targets": [
         {
           "expr": "darkstat_net_out{host=~\"$host\"}",
@@ -957,7 +950,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 19
+        "y": 17
       },
       "id": 27,
       "panels": [],
@@ -980,10 +973,10 @@
       "fill": 1,
       "fillGradient": 7,
       "gridPos": {
-        "h": 5,
+        "h": 6,
         "w": 12,
         "x": 0,
-        "y": 20
+        "y": 18
       },
       "hiddenSeries": false,
       "id": 5,
@@ -1005,12 +998,12 @@
       },
       "lines": true,
       "linewidth": 1,
-      "nullPointMode": "null",
+      "nullPointMode": "null as zero",
       "options": {
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.3.1",
+      "pluginVersion": "7.2.2",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -1046,10 +1039,11 @@
       "timeShift": null,
       "title": "Sonos",
       "tooltip": {
-        "shared": false,
+        "shared": true,
         "sort": 2,
         "value_type": "individual"
       },
+      "transparent": true,
       "type": "graph",
       "xaxis": {
         "buckets": null,
@@ -1112,10 +1106,10 @@
       "fill": 1,
       "fillGradient": 7,
       "gridPos": {
-        "h": 5,
+        "h": 6,
         "w": 12,
         "x": 12,
-        "y": 20
+        "y": 18
       },
       "hiddenSeries": false,
       "id": 4,
@@ -1137,12 +1131,12 @@
       },
       "lines": true,
       "linewidth": 1,
-      "nullPointMode": "null",
+      "nullPointMode": "null as zero",
       "options": {
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.3.1",
+      "pluginVersion": "7.2.2",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -1178,10 +1172,11 @@
       "timeShift": null,
       "title": "Echo",
       "tooltip": {
-        "shared": false,
+        "shared": true,
         "sort": 2,
         "value_type": "individual"
       },
+      "transparent": true,
       "type": "graph",
       "xaxis": {
         "buckets": null,
@@ -1229,10 +1224,10 @@
       "fill": 1,
       "fillGradient": 7,
       "gridPos": {
-        "h": 5,
+        "h": 6,
         "w": 12,
         "x": 0,
-        "y": 25
+        "y": 24
       },
       "hiddenSeries": false,
       "id": 7,
@@ -1254,12 +1249,12 @@
       },
       "lines": true,
       "linewidth": 1,
-      "nullPointMode": "null",
+      "nullPointMode": "null as zero",
       "options": {
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.3.1",
+      "pluginVersion": "7.2.2",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -1274,7 +1269,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "rate(darkstat_net_in{host=~\".*ipad.*\"}[$__interval])",
+          "expr": "rate(darkstat_net_in{host=~\".*ipad.*|.*fire.*|.*iphone.*|.*ipad.*|.*applewatch.*|.*kindle.*\"}[$__interval])",
           "hide": false,
           "instant": false,
           "interval": "$Smooth",
@@ -1282,43 +1277,12 @@
           "refId": "A"
         },
         {
-          "expr": "rate(darkstat_net_in{host=~\".*fire.*\"}[$__interval])",
-          "hide": false,
-          "instant": false,
-          "interval": "$Smooth",
-          "legendFormat": "In: {{host}}",
-          "refId": "D"
-        },
-        {
-          "expr": "rate(darkstat_net_in{host=~\".*iphone.*\"}[$__interval])",
-          "hide": false,
-          "instant": false,
-          "interval": "$Smooth",
-          "legendFormat": "In: {{host}}",
-          "refId": "C"
-        },
-        {
-          "expr": "rate(darkstat_net_out{host=\".*ipad.*\"}[$__interval])",
+          "expr": "rate(darkstat_net_out{host=~\".*ipad.*|.*fire.*|.*iphone.*|.*ipad.*|.*applewatch.*|.*kindle.*\"}[$__interval])",
           "hide": false,
           "instant": false,
           "interval": "$Smooth",
           "legendFormat": "Out: {{host}}",
           "refId": "F"
-        },
-        {
-          "expr": "rate(darkstat_net_out{host=~\".*fire.*\"}[$__interval])",
-          "instant": false,
-          "interval": "$Smooth",
-          "legendFormat": "Out: {{host}}",
-          "refId": "B"
-        },
-        {
-          "expr": "rate(darkstat_net_out{host=~\".*iphone.*\"}[$__interval])",
-          "hide": false,
-          "instant": false,
-          "interval": "$Smooth",
-          "legendFormat": "Out: {{host}}",
-          "refId": "E"
         }
       ],
       "thresholds": [],
@@ -1327,10 +1291,11 @@
       "timeShift": null,
       "title": "Mobile Devices",
       "tooltip": {
-        "shared": false,
+        "shared": true,
         "sort": 2,
         "value_type": "individual"
       },
+      "transparent": true,
       "type": "graph",
       "xaxis": {
         "buckets": null,
@@ -1378,10 +1343,10 @@
       "fill": 1,
       "fillGradient": 7,
       "gridPos": {
-        "h": 5,
+        "h": 6,
         "w": 12,
         "x": 12,
-        "y": 25
+        "y": 24
       },
       "hiddenSeries": false,
       "id": 8,
@@ -1403,12 +1368,12 @@
       },
       "lines": true,
       "linewidth": 1,
-      "nullPointMode": "null",
+      "nullPointMode": "null as zero",
       "options": {
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.3.1",
+      "pluginVersion": "7.2.2",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -1423,7 +1388,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "rate(darkstat_net_in{host=~\".*imac.*\"}[$__interval])",
+          "expr": "rate(darkstat_net_in{host=~\".*imac.*|.*mbp.*|.*kiosk.*\"}[$__interval])",
           "hide": false,
           "instant": false,
           "interval": "$Smooth",
@@ -1431,7 +1396,7 @@
           "refId": "A"
         },
         {
-          "expr": "rate(darkstat_net_out{host=~\".*imac.*\"}[$__interval])",
+          "expr": "rate(darkstat_net_out{host=~\".*imac.*|.*mbp.*|.*kiosk.*\"}[$__interval])",
           "instant": false,
           "interval": "$Smooth",
           "legendFormat": "Out: {{host}}",
@@ -1444,10 +1409,606 @@
       "timeShift": null,
       "title": "Client Devices",
       "tooltip": {
+        "shared": true,
+        "sort": 2,
+        "value_type": "individual"
+      },
+      "transparent": true,
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "format": "Bps",
+          "label": "Bytes Per Second",
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "aliasColors": {},
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "${DS_PROMETHEUS}",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {},
+          "unit": "Bps"
+        },
+        "overrides": []
+      },
+      "fill": 1,
+      "fillGradient": 7,
+      "gridPos": {
+        "h": 6,
+        "w": 12,
+        "x": 0,
+        "y": 30
+      },
+      "hiddenSeries": false,
+      "id": 32,
+      "interval": "15s",
+      "legend": {
+        "alignAsTable": true,
+        "avg": false,
+        "current": true,
+        "hideEmpty": true,
+        "hideZero": true,
+        "max": true,
+        "min": false,
+        "rightSide": true,
+        "show": true,
+        "sort": "current",
+        "sortDesc": true,
+        "total": false,
+        "values": true
+      },
+      "lines": true,
+      "linewidth": 1,
+      "nullPointMode": "null as zero",
+      "options": {
+        "alertThreshold": true
+      },
+      "percentage": false,
+      "pluginVersion": "7.2.2",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [
+        {
+          "alias": "/Out/",
+          "transform": "negative-Y"
+        }
+      ],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "expr": "rate(darkstat_net_in{host=~\".*st-.*|.*smartthings.*\"}[$__interval])",
+          "hide": false,
+          "instant": false,
+          "interval": "$Smooth",
+          "legendFormat": "In: {{host}}",
+          "refId": "A"
+        },
+        {
+          "expr": "rate(darkstat_net_out{host=~\".*st-.*|.*smartthings.*\"}[$__interval])",
+          "hide": false,
+          "instant": false,
+          "interval": "$Smooth",
+          "legendFormat": "Out: {{host}}",
+          "refId": "D"
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "SmartThings",
+      "tooltip": {
+        "shared": true,
+        "sort": 2,
+        "value_type": "individual"
+      },
+      "transparent": true,
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "format": "Bps",
+          "label": "Bytes Per Second",
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "aliasColors": {},
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "${DS_PROMETHEUS}",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {},
+          "unit": "Bps"
+        },
+        "overrides": []
+      },
+      "fill": 1,
+      "fillGradient": 7,
+      "gridPos": {
+        "h": 6,
+        "w": 12,
+        "x": 12,
+        "y": 30
+      },
+      "hiddenSeries": false,
+      "id": 33,
+      "interval": "15s",
+      "legend": {
+        "alignAsTable": true,
+        "avg": false,
+        "current": true,
+        "hideEmpty": true,
+        "hideZero": true,
+        "max": true,
+        "min": false,
+        "rightSide": true,
+        "show": true,
+        "sort": "current",
+        "sortDesc": true,
+        "total": false,
+        "values": true
+      },
+      "lines": true,
+      "linewidth": 1,
+      "nullPointMode": "null as zero",
+      "options": {
+        "alertThreshold": true
+      },
+      "percentage": false,
+      "pluginVersion": "7.2.2",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [
+        {
+          "alias": "/Out/",
+          "transform": "negative-Y"
+        }
+      ],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "expr": "rate(darkstat_net_in{host=~\".*tv-.*|.*xbox.*|.*tv-.*|.*shield.*|.*plex.*|.*switch.*\"}[$__interval])",
+          "hide": false,
+          "instant": false,
+          "interval": "$Smooth",
+          "legendFormat": "In: {{host}}",
+          "refId": "A"
+        },
+        {
+          "expr": "rate(darkstat_net_out{host=~\".*tv-.*|.*xbox.*|.*tv-.*|.*shield.*|.*plex.*|.*switch.*\"}[$__interval])",
+          "hide": false,
+          "instant": false,
+          "interval": "$Smooth",
+          "legendFormat": "Out: {{host}}",
+          "refId": "D"
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "Games / Media",
+      "tooltip": {
+        "shared": true,
+        "sort": 2,
+        "value_type": "individual"
+      },
+      "transparent": true,
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "format": "Bps",
+          "label": "Bytes Per Second",
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "aliasColors": {},
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "${DS_PROMETHEUS}",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {},
+          "unit": "Bps"
+        },
+        "overrides": []
+      },
+      "fill": 1,
+      "fillGradient": 7,
+      "gridPos": {
+        "h": 6,
+        "w": 12,
+        "x": 0,
+        "y": 36
+      },
+      "hiddenSeries": false,
+      "id": 34,
+      "interval": "15s",
+      "legend": {
+        "alignAsTable": true,
+        "avg": false,
+        "current": true,
+        "hideEmpty": true,
+        "hideZero": true,
+        "max": true,
+        "min": false,
+        "rightSide": true,
+        "show": true,
+        "sort": "current",
+        "sortDesc": true,
+        "total": false,
+        "values": true
+      },
+      "lines": true,
+      "linewidth": 1,
+      "nullPointMode": "null as zero",
+      "options": {
+        "alertThreshold": true
+      },
+      "percentage": false,
+      "pluginVersion": "7.2.2",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [
+        {
+          "alias": "/Out/",
+          "transform": "negative-Y"
+        }
+      ],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "expr": "rate(darkstat_net_in{host=~\".*app0.*|.*dns.*\"}[$__interval])",
+          "hide": false,
+          "instant": false,
+          "interval": "$Smooth",
+          "legendFormat": "In: {{host}}",
+          "refId": "A"
+        },
+        {
+          "expr": "rate(darkstat_net_out{host=~\".*app0.*|.*dns.*\"}[$__interval])",
+          "hide": false,
+          "instant": false,
+          "interval": "$Smooth",
+          "legendFormat": "Out: {{host}}",
+          "refId": "H"
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "Servers",
+      "tooltip": {
+        "shared": true,
+        "sort": 2,
+        "value_type": "individual"
+      },
+      "transparent": true,
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "format": "Bps",
+          "label": "Bytes Per Second",
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "aliasColors": {},
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "${DS_PROMETHEUS}",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {},
+          "unit": "Bps"
+        },
+        "overrides": []
+      },
+      "fill": 1,
+      "fillGradient": 7,
+      "gridPos": {
+        "h": 6,
+        "w": 12,
+        "x": 12,
+        "y": 36
+      },
+      "hiddenSeries": false,
+      "id": 35,
+      "interval": "15s",
+      "legend": {
+        "alignAsTable": true,
+        "avg": false,
+        "current": true,
+        "hideEmpty": true,
+        "hideZero": true,
+        "max": true,
+        "min": false,
+        "rightSide": true,
+        "show": true,
+        "sort": "current",
+        "sortDesc": true,
+        "total": false,
+        "values": true
+      },
+      "lines": true,
+      "linewidth": 1,
+      "nullPointMode": "null as zero",
+      "options": {
+        "alertThreshold": true
+      },
+      "percentage": false,
+      "pluginVersion": "7.2.2",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [
+        {
+          "alias": "/Out/",
+          "transform": "negative-Y"
+        }
+      ],
+      "spaceLength": 10,
+      "stack": true,
+      "steppedLine": false,
+      "targets": [
+        {
+          "expr": "rate(darkstat_net_in{host=~\".*render.*\"}[$__interval])",
+          "hide": false,
+          "instant": false,
+          "interval": "$Smooth",
+          "legendFormat": "In: {{host}}",
+          "refId": "A"
+        },
+        {
+          "expr": "rate(darkstat_net_out{host=~\".*render.*\"}[$__interval])",
+          "hide": false,
+          "instant": false,
+          "interval": "$Smooth",
+          "legendFormat": "Out: {{host}}",
+          "refId": "H"
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "Render Farm",
+      "tooltip": {
         "shared": false,
         "sort": 2,
         "value_type": "individual"
       },
+      "transparent": true,
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "format": "Bps",
+          "label": "Bytes Per Second",
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "aliasColors": {},
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "${DS_PROMETHEUS}",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {},
+          "unit": "Bps"
+        },
+        "overrides": []
+      },
+      "fill": 1,
+      "fillGradient": 7,
+      "gridPos": {
+        "h": 6,
+        "w": 12,
+        "x": 0,
+        "y": 42
+      },
+      "hiddenSeries": false,
+      "id": 36,
+      "interval": "15s",
+      "legend": {
+        "alignAsTable": true,
+        "avg": false,
+        "current": true,
+        "hideEmpty": true,
+        "hideZero": true,
+        "max": true,
+        "min": false,
+        "rightSide": true,
+        "show": true,
+        "sort": "current",
+        "sortDesc": true,
+        "total": false,
+        "values": true
+      },
+      "lines": true,
+      "linewidth": 1,
+      "nullPointMode": "null as zero",
+      "options": {
+        "alertThreshold": true
+      },
+      "percentage": false,
+      "pluginVersion": "7.2.2",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [
+        {
+          "alias": "/Out/",
+          "transform": "negative-Y"
+        }
+      ],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "expr": "rate(darkstat_net_in{host=~\".*tesla.*|.*scale.*|.*rachio.*|.*bond.*|.*sense.*|.*myq.*|.*fingbox.*\"}[$__interval])",
+          "hide": false,
+          "instant": false,
+          "interval": "$Smooth",
+          "legendFormat": "In: {{host}}",
+          "refId": "A"
+        },
+        {
+          "expr": "rate(darkstat_net_out{host=~\".*tesla.*|.*scale.*|.*rachio.*|.*bond.*|.*sense.*|.*myq.*|.*fingbox.*\"}[$__interval])",
+          "hide": false,
+          "instant": false,
+          "interval": "$Smooth",
+          "legendFormat": "Out: {{host}}",
+          "refId": "H"
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "IoT",
+      "tooltip": {
+        "shared": true,
+        "sort": 2,
+        "value_type": "individual"
+      },
+      "transparent": true,
       "type": "graph",
       "xaxis": {
         "buckets": null,
@@ -1486,7 +2047,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 30
+        "y": 48
       },
       "id": 29,
       "panels": [
@@ -1635,7 +2196,7 @@
       "type": "row"
     }
   ],
-  "refresh": "",
+  "refresh": "30s",
   "schemaVersion": 26,
   "style": "dark",
   "tags": [],
@@ -1679,12 +2240,12 @@
         "name": "Smooth",
         "options": [
           {
-            "selected": true,
+            "selected": false,
             "text": "30s",
             "value": "30s"
           },
           {
-            "selected": false,
+            "selected": true,
             "text": "1m",
             "value": "1m"
           },
@@ -1722,12 +2283,12 @@
     ]
   },
   "time": {
-    "from": "now-3h",
+    "from": "now-2h",
     "to": "now"
   },
   "timepicker": {},
   "timezone": "",
   "title": "Darkstat",
   "uid": "3L9g8thMk",
-  "version": 35
+  "version": 57
 }

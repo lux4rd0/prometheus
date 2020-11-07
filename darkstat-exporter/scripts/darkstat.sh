@@ -16,7 +16,7 @@ _s2=$(echo "$start_at" | cut -d',' -f2)   # nano sec
 
 tmp_page=$(curl -s "http://gw.tylephony.com:666/hosts/?full=yes")
 
-# Change value to remove the domain name
+# Change value to match on each host
 
 host_list=$(echo "$tmp_page" | grep -i '.tylephony.com' |sed 's/ <td>//g' | sed 's/<\/td>//g')
 

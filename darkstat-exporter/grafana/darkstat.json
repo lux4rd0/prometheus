@@ -52,7 +52,7 @@
   "gnetId": null,
   "graphTooltip": 1,
   "id": null,
-  "iteration": 1604791960367,
+  "iteration": 1604812941168,
   "links": [],
   "panels": [
     {
@@ -89,6 +89,7 @@
         "min": false,
         "rightSide": true,
         "show": true,
+        "sideWidth": 375,
         "sort": "current",
         "sortDesc": true,
         "total": false,
@@ -178,7 +179,7 @@
     },
     {
       "collapsed": false,
-      "datasource": "${DS_INFLUXDB_- TYLEPHONY}",
+      "datasource": "${DS_PROMETHEUS}",
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -242,7 +243,7 @@
           "hide": false,
           "instant": false,
           "interval": "$Smooth",
-          "legendFormat": "{{host}}",
+          "legendFormat": "",
           "refId": "A"
         }
       ],
@@ -321,7 +322,7 @@
           "hide": false,
           "instant": false,
           "interval": "$Smooth",
-          "legendFormat": "{{host}}",
+          "legendFormat": "",
           "refId": "A"
         }
       ],
@@ -397,7 +398,7 @@
           "hide": false,
           "instant": false,
           "interval": "$Smooth",
-          "legendFormat": "{{host}}",
+          "legendFormat": "",
           "refId": "A"
         }
       ],
@@ -467,7 +468,7 @@
           "hide": false,
           "instant": false,
           "interval": "$Smooth",
-          "legendFormat": "{{host}}",
+          "legendFormat": "",
           "refId": "A"
         }
       ],
@@ -537,13 +538,13 @@
           "hide": false,
           "instant": false,
           "interval": "$Smooth",
-          "legendFormat": "{{host}}",
+          "legendFormat": "",
           "refId": "A"
         }
       ],
       "timeFrom": "now/y",
       "timeShift": null,
-      "title": "Total Out (This Year)",
+      "title": "Total In (This Year)",
       "transformations": [
         {
           "id": "calculateField",
@@ -560,7 +561,7 @@
     },
     {
       "collapsed": false,
-      "datasource": "${DS_INFLUXDB_- TYLEPHONY}",
+      "datasource": "${DS_PROMETHEUS}",
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -942,7 +943,7 @@
     },
     {
       "collapsed": false,
-      "datasource": "${DS_INFLUXDB_- TYLEPHONY}",
+      "datasource": "${DS_PROMETHEUS}",
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -988,6 +989,7 @@
         "min": false,
         "rightSide": true,
         "show": true,
+        "sideWidth": 375,
         "sort": "current",
         "sortDesc": true,
         "total": false,
@@ -1124,6 +1126,7 @@
         "min": false,
         "rightSide": true,
         "show": true,
+        "sideWidth": 375,
         "sort": "max",
         "sortDesc": true,
         "total": false,
@@ -1245,6 +1248,7 @@
         "min": false,
         "rightSide": true,
         "show": true,
+        "sideWidth": 375,
         "sort": "current",
         "sortDesc": true,
         "total": false,
@@ -1273,7 +1277,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "rate(darkstat_net_in{host=~\".*ipad.*|.*fire.*|.*iphone.*|.*ipad.*|.*applewatch.*|.*kindle.*\"}[$__interval])",
+          "expr": "rate(darkstat_net_in{host=~\".*ipad.*|.*fire.*|.*iphone.*|.*ipad.*|.*applewatch.*|.*kindle.*|.*nexus.*\"}[$__interval])",
           "hide": false,
           "instant": false,
           "interval": "$Smooth",
@@ -1281,7 +1285,7 @@
           "refId": "A"
         },
         {
-          "expr": "rate(darkstat_net_out{host=~\".*ipad.*|.*fire.*|.*iphone.*|.*ipad.*|.*applewatch.*|.*kindle.*\"}[$__interval])",
+          "expr": "rate(darkstat_net_out{host=~\".*ipad.*|.*fire.*|.*iphone.*|.*ipad.*|.*applewatch.*|.*kindle.*|.*nexus.*\"}[$__interval])",
           "hide": false,
           "instant": false,
           "interval": "$Smooth",
@@ -1367,6 +1371,7 @@
         "min": false,
         "rightSide": true,
         "show": true,
+        "sideWidth": 375,
         "sort": "current",
         "sortDesc": true,
         "total": false,
@@ -1395,7 +1400,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "rate(darkstat_net_in{host=~\".*imac.*|.*mbp.*|.*kiosk.*\"}[$__interval])",
+          "expr": "rate(darkstat_net_in{host=~\".*imac.*|.*mbp.*|.*kiosk.*|.*printer.*\"}[$__interval])",
           "hide": false,
           "instant": false,
           "interval": "$Smooth",
@@ -1403,7 +1408,7 @@
           "refId": "A"
         },
         {
-          "expr": "rate(darkstat_net_out{host=~\".*imac.*|.*mbp.*|.*kiosk.*\"}[$__interval])",
+          "expr": "rate(darkstat_net_out{host=~\".*imac.*|.*mbp.*|.*kiosk.*|.*printer.*\"}[$__interval])",
           "instant": false,
           "interval": "$Smooth",
           "legendFormat": "Out: {{host}}",
@@ -1414,7 +1419,7 @@
       "timeFrom": null,
       "timeRegions": [],
       "timeShift": null,
-      "title": "Client Devices",
+      "title": "Client / Printer",
       "tooltip": {
         "shared": true,
         "sort": 2,
@@ -1488,6 +1493,7 @@
         "min": false,
         "rightSide": true,
         "show": true,
+        "sideWidth": 375,
         "sort": "current",
         "sortDesc": true,
         "total": false,
@@ -1610,6 +1616,7 @@
         "min": false,
         "rightSide": true,
         "show": true,
+        "sideWidth": 375,
         "sort": "current",
         "sortDesc": true,
         "total": false,
@@ -1638,7 +1645,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "rate(darkstat_net_in{host=~\".*tv-.*|.*xbox.*|.*tv-.*|.*shield.*|.*plex.*|.*switch.*\"}[$__interval])",
+          "expr": "rate(darkstat_net_in{host=~\".*tv-.*|.*xbox.*|.*tv-.*|.*shield.*|.*plex.*|.*switch.*|.*oculus.*\"}[$__interval])",
           "hide": false,
           "instant": false,
           "interval": "$Smooth",
@@ -1646,7 +1653,7 @@
           "refId": "A"
         },
         {
-          "expr": "rate(darkstat_net_out{host=~\".*tv-.*|.*xbox.*|.*tv-.*|.*shield.*|.*plex.*|.*switch.*\"}[$__interval])",
+          "expr": "rate(darkstat_net_out{host=~\".*tv-.*|.*xbox.*|.*tv-.*|.*shield.*|.*plex.*|.*switch.*|.*oculus.*\"}[$__interval])",
           "hide": false,
           "instant": false,
           "interval": "$Smooth",
@@ -1732,6 +1739,7 @@
         "min": false,
         "rightSide": true,
         "show": true,
+        "sideWidth": 375,
         "sort": "current",
         "sortDesc": true,
         "total": false,
@@ -1760,7 +1768,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "rate(darkstat_net_in{host=~\".*app0.*|.*dns.*\"}[$__interval])",
+          "expr": "rate(darkstat_net_in{host=~\".*app0.*|.*dns.*|.*attic.*|.*build.*|.*db01.*|.*demo.*|.*docker.*|.*grafana.*|.*graphite.*|.*influxdb.*|.*kub.*|.*lb0.*|.*log.*|.*probe.*|.*prom.*||.*sync.*\"}[$__interval])",
           "hide": false,
           "instant": false,
           "interval": "$Smooth",
@@ -1768,7 +1776,7 @@
           "refId": "A"
         },
         {
-          "expr": "rate(darkstat_net_out{host=~\".*app0.*|.*dns.*\"}[$__interval])",
+          "expr": "rate(darkstat_net_out{host=~\".*app0.*|.*dns.*|.*attic.*|.*build.*|.*db01.*|.*demo.*|.*docker.*|.*grafana.*|.*graphite.*|.*influxdb.*|.*kub.*|.*lb0.*|.*log.*|.*probe.*|.*prom.*||.*sync.*\"}[$__interval])",
           "hide": false,
           "instant": false,
           "interval": "$Smooth",
@@ -1854,6 +1862,7 @@
         "min": false,
         "rightSide": true,
         "show": true,
+        "sideWidth": 375,
         "sort": "current",
         "sortDesc": true,
         "total": false,
@@ -1976,6 +1985,7 @@
         "min": false,
         "rightSide": true,
         "show": true,
+        "sideWidth": 375,
         "sort": "current",
         "sortDesc": true,
         "total": false,
@@ -2004,7 +2014,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "rate(darkstat_net_in{host=~\".*tesla.*|.*scale.*|.*rachio.*|.*bond.*|.*sense.*|.*myq.*|.*fingbox.*\"}[$__interval])",
+          "expr": "rate(darkstat_net_in{host=~\".*tesla.*|.*scale.*|.*rachio.*|.*bond.*|.*sense.*|.*myq.*|.*fingbox.*|.*apc.*\"}[$__interval])",
           "hide": false,
           "instant": false,
           "interval": "$Smooth",
@@ -2012,7 +2022,7 @@
           "refId": "A"
         },
         {
-          "expr": "rate(darkstat_net_out{host=~\".*tesla.*|.*scale.*|.*rachio.*|.*bond.*|.*sense.*|.*myq.*|.*fingbox.*\"}[$__interval])",
+          "expr": "rate(darkstat_net_out{host=~\".*tesla.*|.*scale.*|.*rachio.*|.*bond.*|.*sense.*|.*myq.*|.*fingbox.*|.*apc.*\"}[$__interval])",
           "hide": false,
           "instant": false,
           "interval": "$Smooth",
@@ -2065,8 +2075,131 @@
       }
     },
     {
+      "aliasColors": {},
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "${DS_PROMETHEUS}",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {},
+          "unit": "Bps"
+        },
+        "overrides": []
+      },
+      "fill": 1,
+      "fillGradient": 7,
+      "gridPos": {
+        "h": 6,
+        "w": 12,
+        "x": 12,
+        "y": 42
+      },
+      "hiddenSeries": false,
+      "id": 41,
+      "interval": "15s",
+      "legend": {
+        "alignAsTable": true,
+        "avg": false,
+        "current": true,
+        "hideEmpty": true,
+        "hideZero": true,
+        "max": true,
+        "min": false,
+        "rightSide": true,
+        "show": true,
+        "sideWidth": 375,
+        "sort": "current",
+        "sortDesc": true,
+        "total": false,
+        "values": true
+      },
+      "lines": true,
+      "linewidth": 1,
+      "nullPointMode": "null as zero",
+      "options": {
+        "alertThreshold": true
+      },
+      "percentage": false,
+      "pluginVersion": "7.2.2",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [
+        {
+          "$$hashKey": "object:1340",
+          "alias": "/Out/",
+          "transform": "negative-Y"
+        }
+      ],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "expr": "rate(darkstat_net_in{host=~\".*sw-.*|.*unifi.*\"}[$__interval])",
+          "hide": false,
+          "instant": false,
+          "interval": "$Smooth",
+          "legendFormat": "In: {{host}}",
+          "refId": "A"
+        },
+        {
+          "expr": "rate(darkstat_net_in{host=~\".*sw-.*|.*unifi.*\"}[$__interval])",
+          "hide": false,
+          "instant": false,
+          "interval": "$Smooth",
+          "legendFormat": "Out: {{host}}",
+          "refId": "H"
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "Unifi",
+      "tooltip": {
+        "shared": true,
+        "sort": 2,
+        "value_type": "individual"
+      },
+      "transparent": true,
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "$$hashKey": "object:66",
+          "format": "Bps",
+          "label": "Bytes Per Second",
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "$$hashKey": "object:67",
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
       "collapsed": true,
-      "datasource": "${DS_INFLUXDB_- TYLEPHONY}",
+      "datasource": "${DS_PROMETHEUS}",
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -2218,6 +2351,162 @@
       ],
       "title": "Totals (Individual)",
       "type": "row"
+    },
+    {
+      "collapsed": true,
+      "datasource": "${DS_PROMETHEUS}",
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 49
+      },
+      "id": 40,
+      "panels": [
+        {
+          "alert": {
+            "alertRuleTags": {},
+            "conditions": [
+              {
+                "evaluator": {
+                  "params": [
+                    3
+                  ],
+                  "type": "gt"
+                },
+                "operator": {
+                  "type": "and"
+                },
+                "query": {
+                  "params": [
+                    "A",
+                    "5m",
+                    "now"
+                  ]
+                },
+                "reducer": {
+                  "params": [],
+                  "type": "avg"
+                },
+                "type": "query"
+              }
+            ],
+            "executionErrorState": "alerting",
+            "for": "5m",
+            "frequency": "1m",
+            "handler": 1,
+            "name": "Exporter Scrape alert",
+            "noDataState": "no_data",
+            "notifications": []
+          },
+          "aliasColors": {},
+          "bars": false,
+          "dashLength": 10,
+          "dashes": false,
+          "datasource": "${DS_PROMETHEUS}",
+          "fieldConfig": {
+            "defaults": {
+              "custom": {}
+            },
+            "overrides": []
+          },
+          "fill": 1,
+          "fillGradient": 5,
+          "gridPos": {
+            "h": 7,
+            "w": 10,
+            "x": 0,
+            "y": 50
+          },
+          "hiddenSeries": false,
+          "id": 38,
+          "legend": {
+            "avg": false,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": false,
+            "total": false,
+            "values": false
+          },
+          "lines": true,
+          "linewidth": 1,
+          "nullPointMode": "null",
+          "options": {
+            "alertThreshold": true
+          },
+          "percentage": false,
+          "pluginVersion": "7.2.2",
+          "pointradius": 2,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "spaceLength": 10,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "script_duration_seconds{script=\"darkstat\"}",
+              "interval": "$Smooth",
+              "legendFormat": "",
+              "refId": "A"
+            }
+          ],
+          "thresholds": [
+            {
+              "colorMode": "critical",
+              "fill": true,
+              "line": true,
+              "op": "gt",
+              "value": 3
+            }
+          ],
+          "timeFrom": null,
+          "timeRegions": [],
+          "timeShift": null,
+          "title": "Exporter Scrape",
+          "tooltip": {
+            "shared": true,
+            "sort": 0,
+            "value_type": "individual"
+          },
+          "transparent": true,
+          "type": "graph",
+          "xaxis": {
+            "buckets": null,
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "$$hashKey": "object:269",
+              "format": "s",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "$$hashKey": "object:270",
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ],
+          "yaxis": {
+            "align": false,
+            "alignLevel": null
+          }
+        }
+      ],
+      "title": "Prometheus Scrape Duration",
+      "type": "row"
     }
   ],
   "refresh": "30s",
@@ -2313,6 +2602,6 @@
   "timepicker": {},
   "timezone": "",
   "title": "Darkstat",
-  "uid": "3L9g8thMk",
-  "version": 57
+  "uid": "lux4rd0-darkstat01",
+  "version": 68
 }

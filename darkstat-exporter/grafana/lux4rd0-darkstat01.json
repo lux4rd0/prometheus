@@ -52,7 +52,7 @@
   "gnetId": null,
   "graphTooltip": 1,
   "id": null,
-  "iteration": 1604812941168,
+  "iteration": 1604814116686,
   "links": [],
   "panels": [
     {
@@ -254,12 +254,6 @@
         {
           "id": "calculateField",
           "options": {
-            "binary": {
-              "left": "iphone-lux4rd0.tylephony.com",
-              "operator": "+",
-              "reducer": "sum",
-              "right": "iphone-lux4rd0m4x.tylephony.com"
-            },
             "mode": "reduceRow",
             "reduce": {
               "reducer": "sum"
@@ -333,12 +327,6 @@
         {
           "id": "calculateField",
           "options": {
-            "binary": {
-              "left": "iphone-lux4rd0.tylephony.com",
-              "operator": "+",
-              "reducer": "sum",
-              "right": "iphone-lux4rd0m4x.tylephony.com"
-            },
             "mode": "reduceRow",
             "reduce": {
               "reducer": "sum"
@@ -636,12 +624,6 @@
         {
           "id": "calculateField",
           "options": {
-            "binary": {
-              "left": "iphone-lux4rd0.tylephony.com",
-              "operator": "+",
-              "reducer": "sum",
-              "right": "iphone-lux4rd0m4x.tylephony.com"
-            },
             "mode": "reduceRow",
             "reduce": {
               "reducer": "sum"
@@ -715,12 +697,6 @@
         {
           "id": "calculateField",
           "options": {
-            "binary": {
-              "left": "iphone-lux4rd0.tylephony.com",
-              "operator": "+",
-              "reducer": "sum",
-              "right": "iphone-lux4rd0m4x.tylephony.com"
-            },
             "mode": "reduceRow",
             "reduce": {
               "reducer": "sum"
@@ -1078,22 +1054,7 @@
       }
     },
     {
-      "aliasColors": {
-        "In: echo-kitchen.tylephony.com": "#7200e5",
-        "In: echo-loft.tylephony.com": "#691fbe",
-        "In: echo-mason.tylephony.com": "#603f98",
-        "In: echo-mb.tylephony.com": "#585f72",
-        "In: echo-office.tylephony.com": "#4f7f4c",
-        "In: echo-orange.tylephony.com": "#469f26",
-        "In: echo-red.tylephony.com": "#3ebf00",
-        "Out: echo-kitchen.tylephony.com": "#7200e5",
-        "Out: echo-loft.tylephony.com": "#691fbe",
-        "Out: echo-mason.tylephony.com": "#603f98",
-        "Out: echo-mb.tylephony.com": "#585f72",
-        "Out: echo-office.tylephony.com": "#4f7f4c",
-        "Out: echo-orange.tylephony.com": "#469f26",
-        "Out: echo-red.tylephony.com": "#3ebf00"
-      },
+      "aliasColors": {},
       "bars": false,
       "dashLength": 10,
       "dashes": false,

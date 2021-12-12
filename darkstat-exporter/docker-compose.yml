@@ -1,0 +1,16 @@
+services:
+  darkstat_exporter:
+    container_name: darkstat_exporter
+    command:
+      - '-config.file=/scripts/config.yaml'
+      - '-web.listen-address=:9469'
+    image: docker01.tylephony.com:5000/lux4rd0/darkstat_exporter:latest
+    logging:
+      driver: loki
+      options:
+        loki-url: http://log01.tylephony.com:3100/loki/api/v1/push
+    ports:
+    - published: 9469
+      target: 9469
+    restart: always
+version: '3.3'

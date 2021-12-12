@@ -1,9 +1,9 @@
 #!/bin/bash
 #
-# Shell script for pulling host names and bandwidith usage from Darkstat and returning Prometheus Exporter metrics.
+# Shell script for pulling host name, MAC address, IP address, and bandwidith usage from Darkstat and returning Prometheus Exporter metrics.
 #
 # Dave Schmid
-# https://github.com/lux4rd0/prometheus/tree/main/darkstat-exporter
+# https://github.com/lux4rd0/prometheus/darkstat_exporter
 #
 
 # Change value to represent URL of your DarkStat instance
